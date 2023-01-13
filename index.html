@@ -4,112 +4,132 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./index.css">
+  
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="content">
-      <div class="one">
-        <div class="jeremy">
-          <img src="./images/image-jeremy.png">
-          <h2>Report for</h2>
-          <h1>Jeremy Robson</h1>
-        </div><br/>
-        <div class="sec">
-          <p>Daily</p><br/>
-          <h1>Weekly</h1><br/>
-          <p>Monthly</p><br/>
-        </div>
-      </div>
-      <div class="two">
-         <div class="box">
-           <div class="header">
-              <h1 class="cheo">Work</h1>
-              <h1>...</h1>
-           </div>
-           <div class="bell">
-            <h1>32hrs</h1><br>
-            <p>Last Week - 36hrs</p>
-           </div>
-         </div>
-      </div>
-      <div class="three">
-        <div class="box">
-          <div class="header">
-             <h1 class="cheo">Play</h1>
-             <h1>...</h1>
+  <main>
+    <div class="container">
+      <div class="user">
+          <div class="user_profile">
+              <div class="user_image"></div>
+              <div class="user_info">
+                <p>Report for</p>
+                <h1>Jeremy <br> Robson   </h1>
+            
+              </div>
           </div>
-          <div class="bell">
-           <h1>10hrs</h1><br>
-           <p>Last Week - 8hrs</p>
+
+          <div class="user_schedule">
+            <a href="#" id="daily"><p>Daily</p></a>
+            <a href="#" id="weekly"><p>Weekly</p></a>
+            <a href="#" id="monthly" ><p>Monthly</p></a>
           </div>
-        </div>
-      </div>
-     <div class="four">
-      <div class="box">
-        <div class="header">
-           <h1 class="cheo">Study</h1>
-           <h1>...</h1>
-        </div>
-        <div class="bell">
-         <h1>32hrs</h1><br>
-         <p>Last Week - 7hrs</p>
-        </div>
-       </div>
-      </div>
-      <div class="five">
-       <div class="box">
-        <div class="header">
-           <h1 class="cheo">Exercise</h1>
-           <h1>...</h1>
-        </div>
-        <div class="bell">
-         <h1>4hrs</h1><br>
-         <p>Last Week - 7hrs</p>
-        </div>
-       </div>
-      </div>
-      <div class="six">
-        <div class="box">
-          <div class="header">
-            <h1 class="cheo">social</h1>
-            <h1>...</h1>
-          </div>
-          <div class="bell">
-          <h1>5hrs</h1><br>
-          <p>Last Week - 10hrs</p>
-          </div>
-        </div>
-     </div>
-      <div class="seven">
-        <div class="box">
-          <div class="header">
-            <h1 class="cheo" id="care">Self Care</h1>
-            <h1>...</h1>
-          </div>
-          <div class="bell">
-          <h1>2hrs</h1><br>
-          <p>Last Week - 2hrs</p>
-          </div>
-        </div>
       </div>
 
+      <div class="tasks">
+          <div class="card">
+            <img class="icon" src="assets/images/image-jeremy.png" alt="work-icon">
+            <div class="card_content">
+                <div class="card_top_row">
+                  <p >Work</p>
+                  <img class="ellipsis" src="assets/images/icon-ellipsis.svg" alt="icon-ellipsis">
+                </div>
+                
+                <div class="card_bottom_row">
+                  <h1 class ="current">  32hrs</h1>
+                  <p class ="previous">Last week - 36hrs</p>
+                </div>
+            </div>
+          </div>
+
+          
+          <div class="card">
+            <img class="icon" src="assets/images/icon-play.svg" alt="play-icon">
+            <div class="card_content">
+                <div class="card_top_row">
+                  <p>play</p>
+                  <img class="ellipsis" src="assets/images/icon-ellipsis.svg" alt="icon-ellipsis">
+                </div>
+                
+                <div class="card_bottom_row">
+                  <h1 class ="current">  32hrs</h1>
+                  <p class ="previous">Last week - 36hrs</p>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <img class="icon" src="assets/images/icon-study.svg" alt="study-icon">
+            <div class="card_content">
+                <div class="card_top_row">
+                  <p>study</p>
+                  <img class="ellipsis" src="assets/images/icon-ellipsis.svg" alt="icon-ellipsis">
+                </div>
+                
+                <div class="card_bottom_row">
+                  <h1>  32hrs</h1>
+                  <p>Last week - 36hrs</p>
+                </div>
+            </div>
+          </div>
+
+
+         <div class="card">
+            <img class="icon" src="assets/images/icon-exercise.svg" alt="exercise-icon">
+            <div class="card_content">
+                <div class="card_top_row">
+                  <p>Exercise </p>
+                  <img class="ellipsis" src="assets/images/icon-ellipsis.svg" alt="icon-ellipsis">
+                </div>
+                
+                <div class="card_bottom_row">
+                  <h1>  32hrs</h1>
+                  <p>Last week - 36hrs</p>
+                </div>
+            </div>
+          </div>
+
+          
+          <div class="card">
+            <img class="icon" src="assets/images/icon-social.svg" alt="social-icon">
+            <div class="card_content">
+                <div class="card_top_row">
+                  <p>Social</p>
+                  <img class="ellipsis" src="assets/images/icon-ellipsis.svg" alt="icon-ellipsis">
+                </div>
+                
+                <div class="card_bottom_row">
+                  <h1>  32hrs</h1>
+                  <p>Last week - 36hrs</p>
+                </div>
+            </div>
+          </div>
+
+          
+          <div class="card">
+            <img class="icon" src="assets/images/icon-self-care.svg" alt="selfcare-icon">
+            <div class="card_content">
+                <div class="card_top_row">
+                  <p>self-care</p>  
+                  <img class="ellipsis" src="assets/images/icon-ellipsis.svg" alt="icon-ellipsis">
+                </div>
+                
+                <div class="card_bottom_row">
+                  <h1>  32hrs</h1>
+                  <p>Last week - 36hrs</p>
+                </div>
+            </div>
+          </div>
+
+      </div>
     </div>
-  </div>
+  </main>
 
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Kelvin Koech</a>.
-  </div>
+
 </body>
 </html>
