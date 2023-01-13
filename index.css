@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.content{
+    gap: 5px;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+      "one two three four"
+      "one five six seven"
+    ;
+    align-content: center;
+
+}
+
+.one{
+    height: 400px;
+    width: 230px;
+    border: 2px solid black;
+    grid-area: one;
+}
+.jeremy{
+    height: 290px;
+    background-color: hsl(264, 64%, 52%);
+}
+.jeremy img{
+    width: 80px;
+    height: 80px;
+    padding-left: 20px;
+}
+.jeremy h2{
+    font-size: 20px;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.452);
+}
+.jeremy h1{
+    color: white;
+    font-size: 40px;
+    padding-left: 20px;
+}
+.sec{
+    padding-left: 20px;
+    background-color: blue;
+}
+.sec p {
+    color: grey;
+}
+.sec h1{
+    color: white;
+    font-size: large;
+}
+/* two */
+.two{
+    /* width: 70px; */
+    /* height: 100px; */
+    gap: 5px;
+    height: 200px;
+    grid-area: two;
+}
+.box{
+    padding-top: 50px;
+    height: 150px;
+    width: 200px;
+    border: 2px solid green;
+    background-color: hsl(226, 41%, 10%);
+}
+.header{
+    display: flex;
+    
+
+}
+.cheo{
+    padding-top: 8px;
+    font-size: 20px;
+    padding-right: 120px;
+
+}
+#care{
+    font-size: small;
+    width: 40px;
+}
+
+.three{
+    height: 200px;
+    grid-area: three;
+}
+
+.four{
+    height: 200px;
+    grid-area: four;
+}
+.five{
+    height: 200px;
+    grid-area: five;
+}
+.six{
+    height: 200px;
+    grid-area: six;
+}
